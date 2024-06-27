@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "savana_overhaul",
+	"version": "${version}",
+	"name": "savana_overhaul",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/savana_overhaul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.confrerie.Savana_overhaul"
+		],
+		"client": [
+			"net.confrerie.Savana_overhaulClient"
+		],
+		"fabric-datagen": [
+			"net.confrerie.Savana_overhaulDataGenerator"
+		]
+	},
+	"mixins": [
+		"savana_overhaul.mixins.json",
+		{
+			"config": "savana_overhaul.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
