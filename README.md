@@ -1,2 +1,2 @@
 # Savana_Overhaul
-A maincraft mod that improve the savana
+A minecraft mod that improve the savana
